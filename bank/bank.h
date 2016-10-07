@@ -10,15 +10,21 @@ private:
     string usrpwd;
     int balance;
 public:
-    // Bank Account Management
+    // 1. Bank Account Management
     void frontPage();
-
     void manageAccount();
+
     void createAccount();
     void modifyAccount();
     void closeAccount();
 
-    // ATM Service
+
+
+
+
+    // 2. ATM Service
+    // login with useID and pwd
+    void login();
     void welcomeMsg();
     void mainMenu();
     void navigate();
