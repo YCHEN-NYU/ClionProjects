@@ -15,7 +15,7 @@ class ttt{
 private:
     vector<int> mat;
     vector<int> sub_mat_1, sub_mat_2;
-    int dim;
+    int dim; // matrix.size() = dim*dim
     int element;
     vector<int>::iterator ptr_element;
 public:
@@ -25,9 +25,9 @@ public:
     void get_element();
     vector<int>::iterator find_element();
     bool flag_find_element();
-    bool update_submat();
-    bool update_mat();
+    void update_submat();
+    void update_mat();
     bool check_win();
-};
+    };
 
 #endif //TICTACTOE_TTT_H

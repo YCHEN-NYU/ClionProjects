@@ -20,8 +20,8 @@ int main(){
 
     game.init_mat(N);// n x n matrix
 
-    for (int i = 0; i < N*N; ) {
-
+    for (int i = 0; i < N*N; ++i) {
+        cout << "==============\n";
         do {
             game.get_element();
             game.find_element();
@@ -30,8 +30,8 @@ int main(){
 
         game.update_submat();
         game.update_mat();
-
-        ++i;
+        if(game.check_win())
+            break;
     }
 
 
